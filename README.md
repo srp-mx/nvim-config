@@ -6,19 +6,19 @@
 
 # Opcionales
 Para `coc` y *language server*s:
-    - Tener `nodejs`.
+- Tener `nodejs`.
 
 Cosas instaladas para Omnisharp:
-    - `csharp-ls` (global): *Language server* de C# desde `dotnet tool install`
-    - No olvides correr `:OmniSharpInstall` para Roslyn
+- `csharp-ls` (global): *Language server* de C# desde `dotnet tool install`
+- No olvides correr `:OmniSharpInstall` para Roslyn
 
 Cosas instaladas usando `Coc-install`:
-    - `coc-tsserver`: TypeScript
-    - `coc-texlab`: TeX/LaTeX
-    - `coc-sh`: Bash
-    - `coc-rust-analyzer`: Rust
-    - `coc-pyright`: Python
-    - `coc-lua`: Lua
-    - `coc-json`: JSON
-    - `coc-java`: Java
-    - `coc-clangd`: C/C++ (clang)
+- `coc-tsserver`: TypeScript
+- `coc-texlab`: TeX/LaTeX
+- `coc-sh`: Bash
+- `coc-rust-analyzer`: Rust
+- `coc-pyright`: Python
+- `coc-lua`: Lua
+- `coc-json`: JSON
+- `coc-java`: Java
+- `coc-clangd`: C/C++ (clang)
