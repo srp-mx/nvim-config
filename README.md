@@ -1,10 +1,10 @@
-#Requerimientos
+# Requerimientos
 - Tener `neovim`. 
 - Tener `lua`.
 - Tener la configuración de neovim dentro de `~/.config/nvim`.
 - Tener `vim-plug` instalado y funcionando.
 
-#Opcionales
+# Opcionales
 Para `coc` y *language server*s:
     - Tener `nodejs`.
 
