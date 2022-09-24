@@ -17,7 +17,7 @@ Cosas instaladas para Omnisharp:
 - `csharp-ls` (global): *Language server* de C# desde `dotnet tool install`
 - No olvides correr `:OmniSharpInstall` para Roslyn
 
-Cosas instaladas usando `Coc-install`:
+Cosas instaladas usando `:CocInstall`:
 - `coc-tsserver`: TypeScript
 - `coc-texlab`: TeX/LaTeX
 - `coc-sh`: Bash
