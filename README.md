@@ -8,6 +8,11 @@
 Para `coc` y *language server*s:
 - Tener `nodejs`.
 
+Para `spell`:
+- Tener instalado `aspell`
+- Tener instalado `aspell-en` (para inglés)
+- Tener instalado `aspell-es` (para español)
+
 Cosas instaladas para Omnisharp:
 - `csharp-ls` (global): *Language server* de C# desde `dotnet tool install`
 - No olvides correr `:OmniSharpInstall` para Roslyn
