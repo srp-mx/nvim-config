@@ -17,4 +17,5 @@ call plug#begin("~/.config/nvim/.plugged")
     Plug 'nvim-neorg/neorg'
     Plug 'nvim-orgmode/orgmode'
     Plug 'jupyter-vim/jupyter-vim'
+    Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 call plug#end()
