@@ -14,8 +14,7 @@ Para `spell`:
 - Tener instalado `aspell-es` (para español)
 
 Cosas instaladas para Omnisharp:
-- `csharp-ls` (global): *Language server* de C# desde `dotnet tool install`
-- No olvides correr `:OmniSharpInstall` para Roslyn
+- Tener omnisharp-roslyn (stdio + .net6) con el ejecutable en /usr/lib/omnisharp-roslyn/OmniSharp
 
 Cosas instaladas usando `:CocInstall`:
 - `coc-tsserver`: TypeScript
