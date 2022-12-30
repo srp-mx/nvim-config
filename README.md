@@ -15,6 +15,9 @@ Para `spell`:
 
 Cosas instaladas para `C#`:
 - Tener `omnisharp-roslyn` (stdio + .net6) con el ejecutable en `/usr/lib/omnisharp-roslyn/OmniSharp`
+- Tener `mono`
+- Tener `msbuild`
+- Tener `.net 6`
 
 Cosas instaladas usando `:CocInstall`:
 - `coc-tsserver`: TypeScript
