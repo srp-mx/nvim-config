@@ -13,8 +13,8 @@ Para `spell`:
 - Tener instalado `aspell-en` (para inglés)
 - Tener instalado `aspell-es` (para español)
 
-Cosas instaladas para Omnisharp:
-- Tener omnisharp-roslyn (stdio + .net6) con el ejecutable en /usr/lib/omnisharp-roslyn/OmniSharp
+Cosas instaladas para `C#`:
+- Tener `omnisharp-roslyn` (stdio + .net6) con el ejecutable en `/usr/lib/omnisharp-roslyn/OmniSharp`
 
 Cosas instaladas usando `:CocInstall`:
 - `coc-tsserver`: TypeScript
