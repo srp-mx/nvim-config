@@ -5,3 +5,4 @@ source ~/.config/nvim/init/spelling.vim
 source ~/.config/nvim/init/neorg-setup.vim
 source ~/.config/nvim/init/orgmode-setup.vim
 source ~/.config/nvim/init/omnisharp-setup.vim
+source ~/.config/nvim/init/glslview-setup.vim

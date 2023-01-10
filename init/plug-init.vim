@@ -20,4 +20,6 @@ call plug#begin("~/.config/nvim/.plugged")
     Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
     "Plug 'vijaymarupudi/nvim-fzf'
     Plug 'junegunn/fzf.vim'
+    Plug 'tikhomirov/vim-glsl'
+    Plug 'timtro/glslView-nvim'
 call plug#end()

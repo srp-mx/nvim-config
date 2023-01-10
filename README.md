@@ -29,3 +29,6 @@ Cosas instaladas usando `:CocInstall`:
 - `coc-json`: JSON
 - `coc-java`: Java
 - `coc-clangd`: C/C++ (clang)
+
+Cosas instaladas para `glslView-nvim`
+- `glslViewer` en `/usr/bin/glslViewer`
