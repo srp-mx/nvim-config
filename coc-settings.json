@@ -17,5 +17,8 @@
     "diagnostic.separateRelatedInformationAsDiagnostics": true,
     "suggest.enablePreselect": false,
     // "suggest.autoTrigger": "trigger",
-    "suggest.virtualText": true
+    "suggest.virtualText": true,
+
+    "clangd.disableDiagnostics": true,
+    "inlayHint.enable": false
 }
