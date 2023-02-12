@@ -69,5 +69,10 @@ end)
 lsp.setup()
 
 vim.diagnostic.config({
-	virtual_text=true
+    virtual_text=false,
+    signs=true,
+    underline=true
 })
+
+-- Floating window
+vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})]]
