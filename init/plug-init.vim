@@ -22,4 +22,5 @@ call plug#begin("~/.config/nvim/.plugged")
     Plug 'junegunn/fzf.vim'
     Plug 'tikhomirov/vim-glsl'
     Plug 'timtro/glslView-nvim'
+    Plug 'habamax/vim-godot'
 call plug#end()

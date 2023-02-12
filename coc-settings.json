@@ -20,5 +20,14 @@
     "suggest.virtualText": true,
 
     "clangd.disableDiagnostics": true,
-    "inlayHint.enable": false
+    "inlayHint.enable": false,
+
+    "languageserver": {
+        "godot": {
+            "host": "127.0.0.1",
+            "filetypes": ["gdscript"],
+            "port": 6008
+        }
+    }
+
 }
