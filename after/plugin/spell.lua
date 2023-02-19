@@ -10,5 +10,5 @@ vim.opt.spell = true
     --endif
 --endfor
 
-vim.api.nvim_command("silent mkspell! /home/srp/.config/nvim/spell/es.utf-8.add")
-vim.api.nvim_command("silent mkspell! /home/srp/.config/nvim/spell/en.utf-8.add")
+vim.api.nvim_command("silent mkspell! ~/.config/nvim/spell/es.utf-8.add")
+vim.api.nvim_command("silent mkspell! ~/.config/nvim/spell/en.utf-8.add")
