@@ -61,6 +61,9 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- Java >:(
+    use('mfussenegger/nvim-jdtls')
+
     -- Comments
     use('preservim/nerdcommenter')
 
