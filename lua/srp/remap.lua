@@ -37,6 +37,7 @@ vim.keymap.set("n", "Q", "<nop>")
 
 -- LSP format
 vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end)
+vim.keymap.set("v", "<leader>f", function() vim.lsp.buf.format() end)
 
 -- Quickfix list navigation
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
@@ -73,3 +74,8 @@ vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end)
 vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end)
 vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end)
 vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end)
+vim.keymap.set("n", "<leader>klsp", function() vim.lsp.stop_client(vim.lsp.get_active_clients()) end)
+
+-- Debug bindings
+vim.keymap.set("n", "<leader>di", "<Plug>VimspectorBalloonEval");
+vim.keymap.set("x", "<leader>di", "<Plug>VimspectorBalloonEval");

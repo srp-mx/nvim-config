@@ -12,7 +12,8 @@ lsp.ensure_installed({
     'bashls',
     'pyright',
     --'jdtls',
-    'jsonls'
+    'jsonls',
+    'hls'
 })
 
 -- Fix bug
