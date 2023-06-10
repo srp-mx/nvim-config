@@ -5,27 +5,26 @@ lsp.preset("recommended")
 -- Look for more in :Mason
 lsp.ensure_installed({
 	'tsserver',
-    --'sumneko_lua',
+    'lua_ls',
 	'rust_analyzer',
-	'omnisharp',
+    'csharp_ls',
 	'texlab',
     'bashls',
     'pyright',
-    --'jdtls',
     'jsonls',
     'hls'
 })
 
 -- Fix bug
---lsp.configure('sumneko_lua', {
-	--settings = {
-		--Lua = {
-			--diagnostics = {
-				--globals = { 'vim' }
-			--}
-		--}
-	--}
---})
+lsp.configure('lua_ls', {
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { 'vim' }
+            }
+        }
+    }
+})
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}

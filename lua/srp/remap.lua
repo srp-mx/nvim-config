@@ -76,6 +76,3 @@ vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end)
 vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end)
 vim.keymap.set("n", "<leader>klsp", function() vim.lsp.stop_client(vim.lsp.get_active_clients()) end)
 
--- Debug bindings
-vim.keymap.set("n", "<leader>di", "<Plug>VimspectorBalloonEval");
-vim.keymap.set("x", "<leader>di", "<Plug>VimspectorBalloonEval");

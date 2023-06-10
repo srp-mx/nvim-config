@@ -1,3 +1,4 @@
 .plugged/
 *.add.spl
 /plugin/
+/vimspector-config/gadgets

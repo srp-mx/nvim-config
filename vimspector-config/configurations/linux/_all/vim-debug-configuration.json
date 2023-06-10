@@ -1,0 +1,10 @@
+{
+    "configurations": {
+        "launch": {
+            "adapter": "CodeLLDB",
+            "configuration": {
+                "request": "launch"
+            }
+        }
+    }
+}

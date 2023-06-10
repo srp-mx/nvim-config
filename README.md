@@ -16,5 +16,8 @@ Para `spell`:
 - Tener instalado `aspell-en` (para inglés)
 - Tener instalado `aspell-es` (para español)
 
+Para debugger:
+- Usa `:VimspectorInstall <tab>` para ver e instalar los gadgets que quieras.
+
 # :)
 Versión 2 basada en [init.lua](https://github.com/ThePrimeagen/init.lua).
