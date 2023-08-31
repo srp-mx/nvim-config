@@ -10,6 +10,8 @@ Para búsqueda
 
 Para lsp
 - Tener `nodejs` desde `nvm`
+- Tener `ghcup` para `hls`
+- Tener `dotnet` para `csharp_ls`
 
 Para `spell`:
 - Tener instalado `aspell`

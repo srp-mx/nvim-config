@@ -61,20 +61,6 @@ return require('packer').startup(function(use)
         }
     }
 
-    -- Debugging (vimspector)
-    use {
-        'puremourning/vimspector',
-        --cmd = { "VimspectorInstall", "VimspectorUpdate" },
-        --fn = {
-            --"vimspector#Launch()",
-            --"vimspector#ToggleBreakpoint",
-            --"vimspector#Continue"
-        --},
-        --config = function()
-            --require("config.vimspector").setup()
-        --end,
-    }
-
     -- Java >:(
     use('mfussenegger/nvim-jdtls')
 
