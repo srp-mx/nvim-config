@@ -35,7 +35,7 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 -- Bar on the right
-vim.opt.colorcolumn = "80,120"
+vim.opt.colorcolumn = "80,100,120"
 
 -- Fast scroll
 vim.opt.ttyfast = true
