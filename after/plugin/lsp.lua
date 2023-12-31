@@ -31,7 +31,7 @@ local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
 	['<C-Up>'] = cmp.mapping.select_prev_item(cmp_select),
 	['<C-Down>'] = cmp.mapping.select_next_item(cmp_select),
-	['<C-Tab>'] = cmp.mapping.confirm({ select = true }),
+	['<C-<leader>>'] = cmp.mapping.confirm({ select = true }),
 	['<C-Space>'] = cmp.mapping.complete(),
 })
 
