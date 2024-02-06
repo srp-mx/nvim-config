@@ -46,3 +46,5 @@ vim.opt.cursorline = true
 -- Enable mouse
 vim.opt.mouse = "a"
 
+-- Terminal
+vim.api.nvim_command("autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=no")

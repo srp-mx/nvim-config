@@ -21,6 +21,7 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("n", "gg", "ggzz")
 
 -- Paste/delete without overwriting yank buffer
 vim.keymap.set("x", "<leader>p", "\"_dP")
@@ -75,3 +76,8 @@ vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end)
 vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end)
 vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end)
 vim.keymap.set("n", "<leader>klsp", function() vim.lsp.stop_client(vim.lsp.get_active_clients()) end)
+
+-- Terminal mode
+vim.keymap.set("n", "<leader>th", function() OpenTerminalH() end)
+vim.keymap.set("n", "<leader>tv", function() OpenTerminalV() end)
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
