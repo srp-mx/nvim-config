@@ -21,5 +21,8 @@ Para `spell`:
 Para debugger:
 - Usa `:VimspectorInstall <tab>` para ver e instalar los gadgets que quieras.
 
+Para highlighting:
+- Tener instalado `tree-sitter-cli`
+
 # :)
 Versión 2 basada en [init.lua](https://github.com/ThePrimeagen/init.lua).
