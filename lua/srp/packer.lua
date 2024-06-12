@@ -64,6 +64,10 @@ return require('packer').startup(function(use)
     -- Java >:(
     use('mfussenegger/nvim-jdtls')
 
+    -- Coq u.u
+    use('whonore/Coqtail')
+    use('tomtomjhj/coq-lsp.nvim')
+
     -- Comments
     use('preservim/nerdcommenter')
 
