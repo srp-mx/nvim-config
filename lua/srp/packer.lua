@@ -71,8 +71,44 @@ return require('packer').startup(function(use)
     -- Comments
     use('preservim/nerdcommenter')
 
-    -- Nerdtree
-    use('scrooloose/nerdtree')
+    -- Oil
+    use({
+        "stevearc/oil.nvim",
+        config = function()
+            require("oil").setup({
+                default_file_explorer = true,
+                skip_confirm_for_simple_edits = true,
+                view_options = {
+                    show_hidden = true,
+                    natural_order = false,
+                },
+                win_options = {
+                    wrap = true,
+                },
+                keymaps = {
+                    ["g?"] = "actions.show_help",
+                    ["<CR>"] = "actions.select",
+                    ["sv"] = { "actions.select", opts = { vertical = true }, desc = "Open the entry in vertical split" },
+                    ["sh"] = { "actions.select", opts = { horizontal = true }, desc = "Open the entry in horizontal split" },
+                    ["<S-CR>"] = "actions.preview",
+                    ["<C-Down>"] = "actions.preview_scroll_down",
+                    ["<C-Up>"] = "actions.preview_scroll_up",
+                    ["<leader>nn"] = "actions.close",
+                    ["<leader>nr"] = "actions.refresh",
+                    ["-"] = "actions.parent",
+                    ["<leader>CD"] = "actions.open_cwd",
+                    ["<leader>cd"] = "actions.cd",
+                    ["gx"] = "actions.open_external",
+                    ["gs"] = "actions.change_sort",
+                    ["g."] = "actions.toggle_hidden",
+                },
+                use_default_keymaps = false,
+            })
+        end,
+        requires = {
+            {'nvim-tree/nvim-web-devicons'}
+        },
+    })
 
     -- Start page
     use('mhinz/vim-startify')

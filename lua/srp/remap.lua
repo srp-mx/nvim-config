@@ -1,8 +1,12 @@
 vim.g.mapleader = "¿"
 
 -- Explore
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>nn", ":NERDTreeToggle <CR>", {silent = true})
+--vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+--vim.keymap.set("n", "<leader>nn", ":NERDTreeToggle <CR>", {silent = true})
+vim.keymap.set("n", "<leader>nn", "<CMD>Oil<CR>", {
+    silent = true,
+    desc = "Open parent directory"
+})
 
 -- Undo tree show
 vim.keymap.set("n", "<leader>u", ":UndotreeShow<CR>")
