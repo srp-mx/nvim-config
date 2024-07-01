@@ -110,6 +110,17 @@ return require('packer').startup(function(use)
         },
     })
 
+    -- Extension to 'a' and 'i' commands
+    use({
+        'echasnovski/mini.ai',
+        branch = 'stable',
+        after = "nvim-treesitter",
+        requires = {
+            {"nvim-treesitter/nvim-treesitter"},
+            {"nvim-treesitter/nvim-treesitter-textobjects"}
+        }
+    })
+
     -- Start page
     use('mhinz/vim-startify')
 
