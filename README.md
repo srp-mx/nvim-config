@@ -23,5 +23,9 @@ Para `spell`:
 Para highlighting:
 - Tener instalado `tree-sitter-cli`
 
+# TO-DO
+- Emigrar de [Packer](https://github.com/wbthomason/packer.nvim) pues ya no es
+  mantenido.
+
 # :)
 Versiones 2-4 basadas en [init.lua](https://github.com/ThePrimeagen/init.lua).
