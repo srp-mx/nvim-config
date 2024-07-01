@@ -2,7 +2,8 @@
 - Tener `neovim`.
 - Tener `lua`.
 - Tener la configuración de neovim dentro de `~/.config/nvim`.
-- Tener [Packer](https://github.com/wbthomason/packer.nvim) instalado y funcionando. (Recuerda correr `:PackerSync`)
+- Tener [Packer](https://github.com/wbthomason/packer.nvim) instalado y funcionando.
+  (Recuerda correr `:so` y `:PackerSync`)
 
 # Opcionales
 Para búsqueda
@@ -19,11 +20,8 @@ Para `spell`:
 - Tener instalado `aspell-en` (para inglés)
 - Tener instalado `aspell-es` (para español)
 
-Para debugger:
-- Usa `:VimspectorInstall <tab>` para ver e instalar los gadgets que quieras.
-
 Para highlighting:
 - Tener instalado `tree-sitter-cli`
 
 # :)
-Versión 2 basada en [init.lua](https://github.com/ThePrimeagen/init.lua).
+Versiones 2-4 basadas en [init.lua](https://github.com/ThePrimeagen/init.lua).
