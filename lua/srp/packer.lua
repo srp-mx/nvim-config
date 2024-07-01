@@ -7,6 +7,9 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    -- Plenary (filepath stuff)
+    use 'nvim-lua/plenary.nvim'
+
     -- Telescope (file navigation)
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.4',

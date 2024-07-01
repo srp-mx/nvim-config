@@ -1,5 +1,8 @@
 function MyDrRacket()
-    local title = vim.fn.expand("%")
+    local Path = require("plenary.path")
+    local abs_path = vim.fn.expand("%")
+    local cwd = vim.loop.cwd()
+    local title = Path:new(abs_path):make_relative(cwd)
     OpenTerminalV()
     vim.api.nvim_command("startinsert")
     -- char 21 will clear any input previously on the terminal
