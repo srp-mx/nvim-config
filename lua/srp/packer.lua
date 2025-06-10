@@ -41,28 +41,47 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
 
     -- Language server (lsp)
-    use {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v1.x',
-        requires = {
-            -- LSP Support
-            {'neovim/nvim-lspconfig'},             -- Required
-            {'williamboman/mason.nvim'},           -- Optional
-            {'williamboman/mason-lspconfig.nvim'}, -- Optional
+    --use {
+        --'VonHeikemen/lsp-zero.nvim',
+        --branch = 'v1.x',
+        --requires = {
+            ---- LSP Support
+            --{'neovim/nvim-lspconfig'},             -- Required
+            --{'williamboman/mason.nvim'},           -- Optional
+            --{'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-            -- Autocompletion
-            {'hrsh7th/nvim-cmp'},         -- Required
-            {'hrsh7th/cmp-nvim-lsp'},     -- Required
-            {'hrsh7th/cmp-buffer'},       -- Optional
-            {'hrsh7th/cmp-path'},         -- Optional
-            {'saadparwaiz1/cmp_luasnip'}, -- Optional
-            {'hrsh7th/cmp-nvim-lua'},     -- Optional
+            ---- Autocompletion
+            --{'hrsh7th/nvim-cmp'},         -- Required
+            --{'hrsh7th/cmp-nvim-lsp'},     -- Required
+            --{'hrsh7th/cmp-buffer'},       -- Optional
+            --{'hrsh7th/cmp-path'},         -- Optional
+            --{'saadparwaiz1/cmp_luasnip'}, -- Optional
+            --{'hrsh7th/cmp-nvim-lua'},     -- Optional
 
-            -- Snippets
-            {'L3MON4D3/LuaSnip'},             -- Required
-            {'rafamadriz/friendly-snippets'}, -- Optional
-        }
-    }
+            ---- Snippets
+            --{'L3MON4D3/LuaSnip'},             -- Required
+            --{'rafamadriz/friendly-snippets'}, -- Optional
+        --}
+    --}
+
+    -- LSP server management
+    use { "williamboman/mason.nvim" }
+    use { "williamboman/mason-lspconfig.nvim" }
+
+    -- Some defaults
+    use { "neovim/nvim-lspconfig" }
+
+    -- Autocompletion
+    use { "hrsh7th/nvim-cmp" }
+    use { "hrsh7th/cmp-nvim-lsp" }
+    use { "hrsh7th/cmp-buffer" }
+    use { "hrsh7th/cmp-path" }
+    use { "saadparwaiz1/cmp_luasnip" }
+    use { "hrsh7th/cmp-nvim-lua" }
+
+    -- Snippets
+    use { "L3MON4D3/LuaSnip" }
+    use { "rafamadriz/friendly-snippets" }
 
     -- Java >:(
     use('mfussenegger/nvim-jdtls')
@@ -83,7 +102,7 @@ return require('packer').startup(function(use)
                 skip_confirm_for_simple_edits = true,
                 view_options = {
                     show_hidden = true,
-                    natural_order = false,
+                    natural_order = true,
                 },
                 win_options = {
                     wrap = true,
@@ -127,4 +146,20 @@ return require('packer').startup(function(use)
     -- Start page
     use('mhinz/vim-startify')
 
+    -- Live Server
+    use({
+        "aurum77/live-server.nvim",
+        run = function()
+            require "live_server.util".install()
+        end,
+        cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
+    })
+
+    -- Emojis
+    use({
+        'xiyaowong/telescope-emoji.nvim',
+        config = function()
+            require("telescope").load_extension("emoji")
+        end
+    })
 end)
